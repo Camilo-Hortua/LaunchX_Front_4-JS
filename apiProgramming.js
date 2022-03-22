@@ -7,7 +7,7 @@ const fetchPokemon = () => {
     fetch(url).then((res) => {
         if (res.status != "200") {
             console.log(res);
-            pokeImage("/img/sad-pikachu.gif");
+            pokeImage("./img/sad-pikachu.gif");
         }
         else {
             return res.json();
@@ -98,9 +98,3 @@ const HTPokemon = (url) => {
 const WTPokemon = (url) => {
     document.getElementById("Wg").innerHTML = url;
 }
-
-
-
-
-
-
